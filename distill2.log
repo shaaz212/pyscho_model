@@ -16,3 +16,5 @@ epoch 3  loss 2.798  validation accuracy 54%
 epoch 4  loss 2.111  validation accuracy 56%
 epoch 5  loss 1.264  validation accuracy 61%
 epoch 6  loss 1.339  validation accuracy 64%
+epoch 7  loss 1.579  validation accuracy 64%
+best validation accuracy: 64%  (saved face_student.pt)

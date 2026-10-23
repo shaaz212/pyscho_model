@@ -232,7 +232,18 @@ Each step only turns the knobs a little. After epoch 1 the playground was still 
 - `build_dataset.py` split by time (last 2 clips = test, 1 before = validation), skipping clips with missing people. Result: 23 train, 4 validation, 8 test.
 - `train_movement.py` trains a tiny GRU (8,292 weights). Train reached ~91%, validation jumped 25–75% (4 clips: 1 clip = 25 points), so it was overfitting.
 - `evaluate_movement.py`: test 75% (6 of 8 clips). Not trustworthy with 8 clips and one person. Real fix = more data (more people, more days).
-- Next: Step 7, export to ONNX and quantize (I should run the commands myself and predict first).
+- Step 7 done: `export_onnx.py` made `movement_model.onnx`; `yolo11n-pose.onnx` is 11.3 MB (ONNX stores 4 bytes per weight, so it is bigger than the 6 MB `.pt`). ONNX is a format change, not compression.
+
+### One model for movement + face (2026-10-23)
+
+- `teacher_logits.py`: the big face model (86M weights, 340 MB) labelled 5,000 train + 1,000 test FER-2013 images (only 4.6 images/s on this CPU).
+- `face_student.py` + `distill_student.py`: small student (MobileNetV3-small, 1.5M weights) learns from real labels + the teacher's answers. First try (4,500 images, teacher only) agreed with the teacher only 59% (overfitting). Second try (all 28,709 labelled images) reached 64% validation.
+- `build_custody_model.py`: ONE ONNX file, inputs `clip` (1,36,51) and `face` (1,1,96,96), outputs `behaviour` and `emotion`.
+- `quantize_custody.py`: int8. Naive int8 broke the face part (69% -> 15%). Cause: the first 2 conv layers have a few huge values, so one int8 scale wastes precision. Fix: keep those 2 layers in float, quantize the rest.
+- Final exam (locked test images, run once): big teacher 88%, small float 65%, small int8 **61%** (6.5 MB -> 2.1 MB). Movement: 6 of 8 clips (75%), same in int8.
+- `live_demo.py` runs the full chain on the webcam (pose ONNX + `custody_model_int8.onnx`).
+- Caution: the big model's 88-90% on FER-2013 is far above normal (best published about 75-80%), so it probably saw the test images in its own training. Do not trust the "91%" claim.
+- Not done: running on a real NPU (needs the vendor toolkit and hardware), int8 for the pose model, joint training of movement + face (needs paired data).
 
 ### Still to learn in Lesson 4
 
