@@ -1,0 +1,9 @@
+# Large model checkpoints (4.8 GB) and downloaded datasets - too big for GitHub
+model/
+data/fer/
+
+# Full-desktop screenshots may contain private info
+screenshots/
+
+__pycache__/
+*.pyc

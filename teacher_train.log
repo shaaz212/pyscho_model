@@ -1,0 +1,174 @@
+﻿python : 
+At line:1 char:360
++ ... ion-model"; python teacher_logits.py --split train --n 5000 > teacher ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Loading weights:   0%|          | 0/200 [00:00<?, ?it/s]
+Loading weights:   6%|▌         | 11/200 [00:00<00:01, 106.00it/s]
+Loading weights:  16%|█▋        | 33/200 [00:00<00:00, 171.92it/s]
+Loading weights:  28%|██▊       | 55/200 [00:00<00:00, 189.78it/s]
+Loading weights:  38%|███▊      | 75/200 [00:00<00:00, 142.50it/s]
+Loading weights: 100%|██████████| 200/200 [00:00<00:00, 358.29it/s]
+teacher labels: {0: 'sad', 1: 'disgust', 2: 'angry', 3: 'neutral', 4: 'fear', 5: 'surprise', 6: 'happy'}
+images: (5000, 48, 48)
+
+32/5000  4.1 images/s
+64/5000  4.0 images/s
+96/5000  3.9 images/s
+128/5000  4.0 images/s
+160/5000  4.0 images/s
+192/5000  4.0 images/s
+224/5000  3.9 images/s
+256/5000  4.0 images/s
+288/5000  4.0 images/s
+320/5000  4.1 images/s
+352/5000  4.0 images/s
+384/5000  4.0 images/s
+416/5000  4.0 images/s
+448/5000  4.1 images/s
+480/5000  4.1 images/s
+512/5000  4.2 images/s
+544/5000  4.2 images/s
+576/5000  4.2 images/s
+608/5000  4.2 images/s
+640/5000  4.3 images/s
+672/5000  4.3 images/s
+704/5000  4.3 images/s
+736/5000  4.3 images/s
+768/5000  4.3 images/s
+800/5000  4.3 images/s
+832/5000  4.3 images/s
+864/5000  4.3 images/s
+896/5000  4.3 images/s
+928/5000  4.4 images/s
+960/5000  4.4 images/s
+992/5000  4.4 images/s
+1024/5000  4.4 images/s
+1056/5000  4.4 images/s
+1088/5000  4.4 images/s
+1120/5000  4.4 images/s
+1152/5000  4.4 images/s
+1184/5000  4.4 images/s
+1216/5000  4.4 images/s
+1248/5000  4.4 images/s
+1280/5000  4.4 images/s
+1312/5000  4.4 images/s
+1344/5000  4.4 images/s
+1376/5000  4.4 images/s
+1408/5000  4.4 images/s
+1440/5000  4.4 images/s
+1472/5000  4.4 images/s
+1504/5000  4.4 images/s
+1536/5000  4.5 images/s
+1568/5000  4.5 images/s
+1600/5000  4.5 images/s
+1632/5000  4.5 images/s
+1664/5000  4.5 images/s
+1696/5000  4.5 images/s
+1728/5000  4.5 images/s
+1760/5000  4.5 images/s
+1792/5000  4.5 images/s
+1824/5000  4.5 images/s
+1856/5000  4.5 images/s
+1888/5000  4.5 images/s
+1920/5000  4.5 images/s
+1952/5000  4.5 images/s
+1984/5000  4.5 images/s
+2016/5000  4.5 images/s
+2048/5000  4.6 images/s
+2080/5000  4.6 images/s
+2112/5000  4.6 images/s
+2144/5000  4.6 images/s
+2176/5000  4.6 images/s
+2208/5000  4.6 images/s
+2240/5000  4.6 images/s
+2272/5000  4.6 images/s
+2304/5000  4.6 images/s
+2336/5000  4.6 images/s
+2368/5000  4.6 images/s
+2400/5000  4.6 images/s
+2432/5000  4.6 images/s
+2464/5000  4.6 images/s
+2496/5000  4.6 images/s
+2528/5000  4.6 images/s
+2560/5000  4.6 images/s
+2592/5000  4.6 images/s
+2624/5000  4.6 images/s
+2656/5000  4.6 images/s
+2688/5000  4.6 images/s
+2720/5000  4.6 images/s
+2752/5000  4.6 images/s
+2784/5000  4.6 images/s
+2816/5000  4.6 images/s
+2848/5000  4.6 images/s
+2880/5000  4.6 images/s
+2912/5000  4.6 images/s
+2944/5000  4.6 images/s
+2976/5000  4.6 images/s
+3008/5000  4.6 images/s
+3040/5000  4.6 images/s
+3072/5000  4.6 images/s
+3104/5000  4.6 images/s
+3136/5000  4.6 images/s
+3168/5000  4.6 images/s
+3200/5000  4.6 images/s
+3232/5000  4.6 images/s
+3264/5000  4.6 images/s
+3296/5000  4.6 images/s
+3328/5000  4.6 images/s
+3360/5000  4.6 images/s
+3392/5000  4.6 images/s
+3424/5000  4.6 images/s
+3456/5000  4.6 images/s
+3488/5000  4.6 images/s
+3520/5000  4.6 images/s
+3552/5000  4.6 images/s
+3584/5000  4.6 images/s
+3616/5000  4.6 images/s
+3648/5000  4.6 images/s
+3680/5000  4.6 images/s
+3712/5000  4.6 images/s
+3744/5000  4.6 images/s
+3776/5000  4.6 images/s
+3808/5000  4.6 images/s
+3840/5000  4.6 images/s
+3872/5000  4.6 images/s
+3904/5000  4.6 images/s
+3936/5000  4.6 images/s
+3968/5000  4.6 images/s
+4000/5000  4.6 images/s
+4032/5000  4.6 images/s
+4064/5000  4.6 images/s
+4096/5000  4.6 images/s
+4128/5000  4.6 images/s
+4160/5000  4.6 images/s
+4192/5000  4.6 images/s
+4224/5000  4.6 images/s
+4256/5000  4.6 images/s
+4288/5000  4.6 images/s
+4320/5000  4.6 images/s
+4352/5000  4.6 images/s
+4384/5000  4.6 images/s
+4416/5000  4.6 images/s
+4448/5000  4.6 images/s
+4480/5000  4.6 images/s
+4512/5000  4.7 images/s
+4544/5000  4.7 images/s
+4576/5000  4.7 images/s
+4608/5000  4.7 images/s
+4640/5000  4.7 images/s
+4672/5000  4.7 images/s
+4704/5000  4.7 images/s
+4736/5000  4.7 images/s
+4768/5000  4.7 images/s
+4800/5000  4.7 images/s
+4832/5000  4.7 images/s
+4864/5000  4.7 images/s
+4896/5000  4.7 images/s
+4928/5000  4.7 images/s
+4960/5000  4.7 images/s
+4992/5000  4.7 images/s
+5000/5000  4.7 images/s
+saved

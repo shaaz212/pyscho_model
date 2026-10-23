@@ -1,0 +1,17 @@
+﻿student weights: 1524743
+epoch  1  loss 2.037  validation: agrees with teacher 33%, correct vs true label 32%
+epoch  2  loss 1.619  validation: agrees with teacher 48%, correct vs true label 46%
+epoch  3  loss 1.047  validation: agrees with teacher 53%, correct vs true label 50%
+epoch  4  loss 0.587  validation: agrees with teacher 47%, correct vs true label 46%
+epoch  5  loss 0.767  validation: agrees with teacher 55%, correct vs true label 53%
+epoch  6  loss 0.645  validation: agrees with teacher 54%, correct vs true label 51%
+epoch  7  loss 0.371  validation: agrees with teacher 57%, correct vs true label 54%
+epoch  8  loss 0.349  validation: agrees with teacher 58%, correct vs true label 55%
+epoch  9  loss 0.390  validation: agrees with teacher 58%, correct vs true label 55%
+epoch 10  loss 0.327  validation: agrees with teacher 59%, correct vs true label 58%
+epoch 11  loss 0.256  validation: agrees with teacher 58%, correct vs true label 55%
+epoch 12  loss 0.308  validation: agrees with teacher 58%, correct vs true label 56%
+epoch 13  loss 0.226  validation: agrees with teacher 57%, correct vs true label 55%
+epoch 14  loss 0.261  validation: agrees with teacher 58%, correct vs true label 56%
+epoch 15  loss 0.271  validation: agrees with teacher 58%, correct vs true label 56%
+best agreement with teacher: 59%  (saved face_student.pt)

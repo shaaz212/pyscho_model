@@ -1,0 +1,49 @@
+﻿python : 
+At line:1 char:434
++ ... n.log 2>&1; python teacher_logits.py --split test --n 1000 > teacher_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Loading weights:   0%|          | 0/200 [00:00<?, ?it/s]
+Loading weights:   4%|▎         | 7/200 [00:00<00:04, 46.77it/s]
+Loading weights:  18%|█▊        | 36/200 [00:00<00:01, 147.20it/s]
+Loading weights:  34%|███▍      | 68/200 [00:00<00:00, 196.36it/s]
+Loading weights:  44%|████▍     | 89/200 [00:00<00:01, 97.71it/s] 
+Loading weights: 100%|██████████| 200/200 [00:00<00:00, 226.79it/s]
+teacher labels: {0: 'sad', 1: 'disgust', 2: 'angry', 3: 'neutral', 4: 'fear', 5: 'surprise', 6: 'happy'}
+images: (1000, 48, 48)
+
+32/1000  4.8 images/s
+64/1000  4.8 images/s
+96/1000  4.8 images/s
+128/1000  4.9 images/s
+160/1000  4.9 images/s
+192/1000  4.9 images/s
+224/1000  4.9 images/s
+256/1000  4.9 images/s
+288/1000  4.9 images/s
+320/1000  4.9 images/s
+352/1000  4.9 images/s
+384/1000  4.9 images/s
+416/1000  4.9 images/s
+448/1000  4.9 images/s
+480/1000  4.9 images/s
+512/1000  4.9 images/s
+544/1000  4.9 images/s
+576/1000  4.9 images/s
+608/1000  4.9 images/s
+640/1000  4.9 images/s
+672/1000  4.9 images/s
+704/1000  4.9 images/s
+736/1000  4.9 images/s
+768/1000  4.9 images/s
+800/1000  4.9 images/s
+832/1000  4.9 images/s
+864/1000  4.9 images/s
+896/1000  4.9 images/s
+928/1000  4.9 images/s
+960/1000  4.9 images/s
+992/1000  4.9 images/s
+1000/1000  4.9 images/s
+saved

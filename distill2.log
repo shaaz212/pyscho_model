@@ -1,0 +1,18 @@
+﻿python : C:\Users\DGNXT-LAP-57\Desktop\face-expression-model\distill_student.py:34: UserWarning: The given NumPy array 
+is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in 
+undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a 
+tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at 
+C:\actions-runner\_work\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+At line:1 char:360
++ ... sion-model"; python -u distill_student.py > distill2.log 2>&1; "done"
++                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\DGNXT-...numpy.cpp:219.):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  t_logits[rows] = torch.tensor(teacher["logits"])
+epoch 1  loss 2.905  validation accuracy 43%
+epoch 2  loss 1.954  validation accuracy 52%
+epoch 3  loss 2.798  validation accuracy 54%
+epoch 4  loss 2.111  validation accuracy 56%
+epoch 5  loss 1.264  validation accuracy 61%
+epoch 6  loss 1.339  validation accuracy 64%
